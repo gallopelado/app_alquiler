@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+    <h3>Estas en el index de sala</h3>
+    <h4>La tablita</h4>
+    <table class="table table-stripered">
+        <theader>
+            <tr>
+                <td>Id</td>
+                <td>Descripcion</td>
+            </tr>
+        </theader>
+        <tbody id="tb"></tbody>
+    </table>
+
+{% endblock %}
+
+{% block mi_js %}
+<script src="{{ url_for('static', filename='jsOperacionales/referencial/sala/sala.js') }}"></script>
+{% endblock %}
